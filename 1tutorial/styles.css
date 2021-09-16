@@ -1,35 +1,36 @@
-/* Global */
+/* 2.0 Vamos a añadir un estilo x defecto q resetee los estilos globales del navegador */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  box-sizing: border-box;  /*border box para q ocupen el espaciado interno y externo */
+  margin: 0;  /*para q no haya margenes hacia afuera */
+  padding: 0;  /*Para q no haya espaciados hacia dentro */
+} /*Una vez puesto los cambios tenemos q ponerlo en el html, para 2.1 ves a html, bueno no t lies mucho con eso*/
 
-body {
+body { /*2.2.Para el body vamos a añadir un color de fondo */
   font-family: "Oswald", sans-serif;
-  background-color: #000000;
+  background-color: #000000; /*este es negro*/
   /* Pattern from https://www.heropatterns.com/ */
+  /*Vamos a poner fondo*/
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='105' viewBox='0 0 80 105'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='death-star' fill='%23540606' fill-opacity='0.4'%3E%3Cpath d='M20 10a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm15 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zM20 75a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zm30-65a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V10zm0 65a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V75zM35 10a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zM5 45a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10zm60 35a5 5 0 0 1 10 0v50a5 5 0 0 1-10 0V45zm0-35a5 5 0 0 1 10 0v20a5 5 0 0 1-10 0V10z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: #1e272e;
-  color: #fff;
-  font-size: 16px;
+  color: #fff; /*Y en este caso como no tengo texto no se ve color blanco, ya q son enlaces. Pero aun así lo qeremos blanco, para 2.3 abajo*/
+  font-size: 16px; 
 }
-
+/*2.3. Vamos a poner los enlaces(del list menu) blancos. Las etiquetas a tendran color blanco, */
 a {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none; /*Esto es para q no tengan ese subrayado(los enlaces)*/
 }
-
+/*2.4.Vamos a quitarle a nuestra lista/menu los estilos por defecto q puedan tener*/
 ul {
   list-style: none;
 }
-
+/*2.5.Recuerda q nuesto contenido esta centrado! asi q vamos a hacer q este centrado*/
 .container {
   width: 90%;
   margin: auto;
 }
 
-/* Navigation */
+/*2.6. Vamos a estilizar la lista/menu */
 .nav-main {
   font-size: 17px;
   display: flex;
@@ -38,28 +39,29 @@ ul {
   height: 60px;
   padding: 20px 0;
 }
-
+/*2.7.VAMOS  a hacer el logo mas pequeño*/
 .nav-brand {
   width: 50px;
 }
 
-/* Navbar Left */
+/* 2.8.OJO PERO vamos a hacer q nuestra lista menu este en horizontal de izquierda a derecha*/
 .nav-main ul {
   display: flex;
 }
-
+/*Una vez puesto en horizontal vamos a poner espaciados xk estan pegados xd*/
 .nav-main ul li {
   padding: 10px;
 }
-
+/*3.1.Si queremos añadir un espaciado de el subrayado bonito cada vez q acercamos
+PARA IR A 3.2. VAMOS A HTML en <hr>*/
 .nav-main ul li a {
   padding: 2px;
 }
-
+/*3.ASI CADA VEZ Q ACERQUEMOS EL MOUSE SOBRE UN LINK SALDRA UN subrayado bonito*/
 .nav-main ul li a:hover {
   border-bottom: 2px solid #fff;
 }
-
+/*2.9.Vamos a centrar la lista un poco mas cerca del logo*/
 .nav-main ul.nav-menu {
   flex: 1;
   margin-left: 20px;
