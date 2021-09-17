@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- 1. We copy from a template(3:10). Pon en title el titulo de tu proyecto -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <!-- CUSTOM CSS -->
+  <!-- CUSTOM CSS      2.1.                    -->
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -18,13 +18,14 @@
   <div class="menu-btn">
     <i class="fas fa-bars fa-2x"></i>
   </div>
-
+<!-- 1.1.La etiqueta nav va a contener toda la navegación, pero como quiero q el contenido este centrado pongo container
   <div class="container">
-    <!-- Navigation -->
-    <nav class="nav-main">
-      <!-- Brand -->
+    <!-- 1.2. Para poder estilizarlo vamos a poner nav-main-->
+  <!--1.3.Nuestra navegación tiene 3 secciones, una imagen(logo), lista del menu, y el buscador(5:50). Entonces hay q separarlos-->
+    <nav class="nav-main"> 
+      <!-- 1.4.Primero vamos con la IMAGEN , ponemos una class para luego estilizarla, ponemos la imagen en otra carpeta y la llamamos :D-->
       <img src="img/brand.png" alt="TechNews Logo" class="nav-brand">
-      <!-- Left Nav -->
+      <!-- 1.5. Y así de fácil ponemos nuestra lista de menu-->
       <ul class="nav-menu">
         <li>
           <a href="#">Web Development</a>
@@ -52,29 +53,29 @@
         </li>
       </ul>
 
-      <!-- Right Nav -->
+      <!-- 1.6. VAMOS A PONER LA LUPA. Una vez acabado vamos a estilizarlo. PARA 2. VE A STYLE.CSS :DDDDDDD-->
       <ul class="nav-menu-right">
         <li>
-          <a href="#">
-            <i class="fas fa-search"></i>
-          </a>
+          <a href="#">  
+            <i class="fas fa-search"></i>  <!-- Esto es una clase de font awesome para poner la lupa-->
+          </a> 
         </li>
       </ul>
     </nav>
-    <hr>
+    <hr>  <!-- 3.2. SI QUEREMOS MOSTRAR UNA LINEA DEBAJO DE NUESTRO MENU PARA SEPARAR PUES PONEMOS HR -->
 
-    <!-- SHOWCASE -->
+    <!-- SHOWCASE              3.3.VAMOS A MOSTRAR LA IMAGEN PRINCIPAL DEL SITIO(la grande q se ve al iniciar)-->
     <header class="showcase">
       <h2>Big News Today!</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id dolor laudantium rerum, excepturi est praesentium
         natus qui? Tempora rerum, numquam inventore eligendi in, nostrum reprehenderit, eum cumque fugit eaque
         similique!</p>
-      <a href="#" class="btn">
-        SignUp <i class="fas fa-chevron-right"></i>
-      </a>
+      <a href="#" class="btn"> <!-- a esta etiqueta a podria colocarle una clase q luego podriamos utilizar como btn en css-->
+        SignUp <i class="fas fa-chevron-right"></i> <!-- esto es para q ponga flechitas a la derecha -->
+      </a>                             <!--  PARA 3.4. ves a css -->
     </header>
 
-    <!-- NEWS CARDS -->
+    <!-- NEWS CARDS . Como ves, creamos una clase asi editamos en css-->
     <div class="news-cards">
       <div>
         <img src="img/news1.jpg" alt="" />
@@ -82,9 +83,9 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
           doloremque modi mollitia rerum, similique optio eligendi itaque amet qui ullam vel incidunt asperiores fuga?
         </p>
-        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
-      </div>
-      <div>
+        <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a> <!-- -->
+      </div>     
+      <div>   <!--Aquí nota como copiamos y pegamos para añadir otra imagen -->
         <img src="img/news2.jpg" alt="" />
         <h3>Lorem, ipsum dolor.</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam dolore fugit esse corporis nesciunt minima
